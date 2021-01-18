@@ -8,9 +8,10 @@
   "scripts": {
     "serve": "live-server public/",
     "build": "webpack",
+    "build:prod": "webpack -p --env production",
     "dev-server": "webpack-dev-server",
     "heroku-postbuild": "yarn run build:prod",
-    "start": "yarn run webpack-dev-server"
+    "start": "yarn run dev-server"
   },
   "dependencies": {
     "babel-cli": "6.24.1",
